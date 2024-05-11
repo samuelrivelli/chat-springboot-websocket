@@ -7,7 +7,7 @@ import org.springframework.messaging.simp.SimpMessageHeaderAccessor;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class chatController {
+public class ChatController {
 
     @MessageMapping("/chat.sendMessage")
     @SendTo("/topic/public")
